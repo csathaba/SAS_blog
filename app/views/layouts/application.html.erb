@@ -10,7 +10,8 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="#" class="name">Thamó Csaba</a>
+		<!-- <a href="#" class="name">Thamó Csaba</a> -->
+		<%= link_to 'Thamó Csaba', root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="#">Projects</a>
@@ -19,6 +20,13 @@
 	</header>
 
 <%= yield %>
+
+	<footer id="main_footer">
+		<p class="copyright">&copy;2016 Thamó Csaba</p>
+		<nav>
+			<a href="http://github.com/csathaba" target="_blank"><i class="fa fa-github"></i></a>
+		</nav>
+	</footer>
 
 </body>
 </html>

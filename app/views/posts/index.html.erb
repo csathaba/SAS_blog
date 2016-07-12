@@ -1,1 +1,5 @@
 <h1>This will be the index page.</h1>
+<%= @posts.each do |post| %>
+	<h3><%= link_to post.title, post %></h3>
+	<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+<% end %>
