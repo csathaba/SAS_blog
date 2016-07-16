@@ -48,6 +48,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pygments.rb'
 gem 'redcarpet'
+gem 'friendly_id', '~> 5.1'
 
 group :production do
 	gem 'pg'
