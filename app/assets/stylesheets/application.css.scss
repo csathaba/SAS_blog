@@ -198,7 +198,12 @@ input[type="submit"], .button {
 
 
 
-#link_cs {
+.link_cs {
 	font-size: .8em;
 	text-transform: uppercase;
+	text-decoration: none;
+	color: $dark;
+	&:hover {
+		color: $highlight;
+	}
 }
