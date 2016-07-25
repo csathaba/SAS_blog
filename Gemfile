@@ -50,6 +50,7 @@ gem 'pygments.rb'
 gem 'redcarpet'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 group :production do
 	gem 'pg'
