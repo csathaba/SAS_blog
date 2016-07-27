@@ -17,6 +17,12 @@
 			<%= link_to "Projects", projects_path %>
 			<%= link_to "Contact", new_contact_path %>
 		</nav>
+
+		<% if notice %>
+			<p class="notice"><%= notice %></p>
+		<% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
 	</header>
 
 <%= yield %>
