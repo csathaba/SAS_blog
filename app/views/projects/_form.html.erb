@@ -29,4 +29,8 @@
 
 	<%= f.submit %>
 
+	<% if @project.id.present? %>
+		<%= link_to 'Back', project_path(@project), class: "button" %>
+	<% end %>
+
 <% end %>

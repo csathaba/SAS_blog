@@ -23,4 +23,8 @@
 
 	<%= f.submit %>
 
+	<% if @post.id.present? %>
+		<%= link_to 'Back', post_path(@post), class: "button" %>
+	<% end %>
+
 <% end %>

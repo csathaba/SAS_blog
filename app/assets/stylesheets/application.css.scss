@@ -172,6 +172,7 @@ input[type="submit"], .button {
 	color: $dark;
 	text-decoration: none;
 	padding: 1em 2em;
+	margin: 0 1rem;
 	&:hover {
 		border: 2px solid $highlight;
 		color: $highlight;
@@ -189,6 +190,7 @@ input[type="submit"], .button {
 	margin: 4em 0 0 0;
 	text-align: center;
 }
+
 
 @import 'welcome';
 @import 'posts_projects';
