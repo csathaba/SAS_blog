@@ -2,22 +2,22 @@
 	<div class="col-1 about homepage_content">
 		<h2>About</h2>
 		<hr>
-		<p>Kisgekkopppp vagyok, aki nagyon szereti Kistappancsát, akinek egy nagyon szép új honlapja van. Nézd meg <a href="http://www.coachingonline.cloud/">itt</a> :)</p>
+		<p>This page is all about vitamins, micronutrients, supplements, what to take and why. </p>
 	</div>
 	<div class="col-2 homepage_content">
-		<h2>Stuff I've Written</h2>
+		<h2>Vitamins</h2>
 		<hr>
 		<% @posts.each do |post| %>
 			<h3><%= link_to post.title, post %></h3>
-			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+			<!-- <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p> -->
 		<% end %>
 	</div>
 	<div class="col-3 homepage_content">
-		<h2>Stuff I've Built</h2>
+		<h2>Other Stuff I found useful</h2>
 		<hr>
 		<% @projects.each do |project| %>
 			<h3><%= link_to project.title, project %></h3>
-			<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+			<!-- <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p> -->
 		<% end %>
 	</div>
 </div>
