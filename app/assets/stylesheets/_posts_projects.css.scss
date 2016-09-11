@@ -41,6 +41,13 @@
 	hr {
 		margin: 3em auto;
 	}
+	a {
+		text-decoration: none;
+		color: $link;
+		&:hover {
+			color: $highlight;
+		}
+	}
 }
 
 #share_box {

@@ -2,10 +2,10 @@
 	<div class="col-1 about homepage_content">
 		<h2>About</h2>
 		<hr>
-		<p>This page is all about vitamins, micronutrients, supplements, what to take and why. </p>
+		<p>Vitamins, micronutrients, supplements, what to take and why. In this blog you will find extracts from articles I found useful. </p>
 	</div>
 	<div class="col-2 homepage_content">
-		<h2>Vitamins</h2>
+		<h2>Vitamins & Supplements to Take</h2>
 		<hr>
 		<% @posts.each do |post| %>
 			<h3><%= link_to post.title, post %></h3>
@@ -13,7 +13,7 @@
 		<% end %>
 	</div>
 	<div class="col-3 homepage_content">
-		<h2>Other Stuff I found useful</h2>
+		<h2>Other Cool Stuff</h2>
 		<hr>
 		<% @projects.each do |project| %>
 			<h3><%= link_to project.title, project %></h3>
