@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160726152641) do
+ActiveRecord::Schema.define(version: 20161011060724) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,28 @@ ActiveRecord::Schema.define(version: 20160726152641) do
   end
 
   add_index "projects", ["slug"], name: "index_projects_on_slug", unique: true, using: :btree
+
+  create_table "qoute_quoteauthors", force: :cascade do |t|
+    t.integer  "quote_id"
+    t.integer  "quoteauthor_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "qoute_quoteauthors", ["quote_id"], name: "index_qoute_quoteauthors_on_quote_id", using: :btree
+  add_index "qoute_quoteauthors", ["quoteauthor_id"], name: "index_qoute_quoteauthors_on_quoteauthor_id", using: :btree
+
+  create_table "quoteauthors", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "quotes", force: :cascade do |t|
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
