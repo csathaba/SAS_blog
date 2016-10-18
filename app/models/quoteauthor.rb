@@ -1,4 +1,4 @@
-class QuoteAuthor < ActiveRecord::Base
-  has_many :qoute_quoteauthor
-  has_many :quotes, through: :qoute_quoteauthor
+class Quoteauthor < ActiveRecord::Base
+  has_many :quote_quoteauthors
+  has_many :quotes, through: :quote_quoteauthors
 end

@@ -11,7 +11,7 @@ class CreateQuoteQuoteauthor < ActiveRecord::Migration
       t.timestamps
     end
 
-    create_table :qoute_quoteauthors do |t|
+    create_table :quote_quoteauthors do |t|
       t.belongs_to :quote, index: true
       t.belongs_to :quoteauthor, index: true
       t.timestamps
