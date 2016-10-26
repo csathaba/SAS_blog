@@ -52,6 +52,8 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
+gem 'gibbon', '~> 2.2', '>= 2.2.4'
+gem 'simple_form', '~> 3.3', '>= 3.3.1'
 
 group :production do
 	gem 'rails_12factor'

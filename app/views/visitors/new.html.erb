@@ -1,0 +1,10 @@
+<h1 id="page_title">Sign up for the Newsletter</h1>
+
+<div class="skinny_wrapper wrapper_padding">
+  <%= simple_form_for @visitor do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
+    <br/>
+    <%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
+  <% end %>
+</div>

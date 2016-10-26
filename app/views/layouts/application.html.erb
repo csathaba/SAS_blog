@@ -15,6 +15,7 @@
 		<nav>
 			<%= link_to "Vitamins & Supplements", posts_path %>
 			<%= link_to "Other Cool Stuff", projects_path %>
+			<%= link_to "Newsletter", new_visitor_path %>
 			<%= link_to "Contact", new_contact_path %>
 			<% if user_signed_in? %>
 				<%= link_to "Sign out", destroy_user_session_path, method: :delete %>

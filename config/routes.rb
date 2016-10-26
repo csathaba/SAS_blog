@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :posts, :path => "vitamins"
   resources :projects, :path => "other_stuff"
   resources :contacts, only: [:new, :create]
+  resources :visitors, only: [:new, :create]
   get "welcome/index"
   root "welcome#index"
 
