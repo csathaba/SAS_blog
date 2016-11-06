@@ -6,13 +6,12 @@ class Visitor
 
   def subscribe
     mailchimp = Gibbon::Request.new(api_key: Rails.application.secrets.mailchimp_api_key)
-    # mailchimp = Gibbon::Request.new(api_key: ENV["MAILCHIMP_API_KEY"])
+    mailchimp.timeout = 10
     list_id = Rails.application.secrets.mailchimp_list_id
-    # list_id = ENV["MAILCHIMP_LIST_ID_vitamins"]
     result = mailchimp.lists(list_id).members.create(
       body: {
         email_address: self.email,
-        status: 'subscribed'
+        status: 'pending'
     })
     Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
   end
