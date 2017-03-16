@@ -2,12 +2,11 @@
 	<div class="col-1 about homepage_content">
 		<h2>About</h2>
 		<hr>
-		<p>Vitamins, micronutrients, supplements, what to take and why. In this blog you will find extracts from articles I found useful. 
-			 Mostly from <a href="https://www.foundmyfitness.com/" target="_blank">Dr. Rhonda Patrick</a> and 
-			 <a href="https://authoritynutrition.com/" target="_blank">https://authoritynutrition.com</a>.</p>
+		<p>Welcome to the practical hands-on SAS blog, where you can learn the 80/20 of SAS data management and reporting.
+			Focus on the things that are applicable, and practice on real-world projects and examples.</p>
 	</div>
 	<div class="col-2 homepage_content">
-		<h2>Vitamins & Supplements to Take</h2>
+		<h2>Random posts</h2>
 		<hr>
 		<% @posts.each do |post| %>
 			<h3><%= link_to post.title, post %></h3>
@@ -15,7 +14,7 @@
 		<% end %>
 	</div>
 	<div class="col-3 homepage_content">
-		<h2>Other Cool Stuff</h2>
+		<h2>Immersion Projects</h2>
 		<hr>
 		<% @projects.each do |project| %>
 			<h3><%= link_to project.title, project %></h3>

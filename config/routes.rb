@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts, :path => "vitamins"
-  resources :projects, :path => "other_stuff"
+  resources :posts
+  resources :projects
   resources :contacts, only: [:new, :create]
   resources :visitors, only: [:new, :create]
   get "welcome/index"

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Health & Nutrition</title>
+	<title>SAS Blog</title>
 	<link href='//fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -13,8 +13,8 @@
 		<!-- <a href="#" class="name">Thamó Csaba</a> -->
 		<%= link_to 'Health & Nutrition', root_path, class: "name" %>
 		<nav>
-			<%= link_to "Vitamins & Supplements", posts_path %>
-			<%= link_to "Other Cool Stuff", projects_path %>
+			<%= link_to "Posts", posts_path %>
+			<%= link_to "Projects", projects_path %>
 			<%= link_to "Newsletter", new_visitor_path %>
 			<%= link_to "Contact", new_contact_path %>
 			<% if user_signed_in? %>

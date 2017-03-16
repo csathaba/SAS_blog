@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails'
 gem 'pg'
 
 # Use SCSS for stylesheets
@@ -55,6 +55,6 @@ gem 'devise', '~> 4.2'
 gem 'gibbon', '~> 2.2', '>= 2.2.4'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 
-group :production do
-	gem 'rails_12factor'
-end
+# group :production do
+# 	gem 'rails_12factor'
+# end

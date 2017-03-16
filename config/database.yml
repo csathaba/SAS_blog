@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: vitamins_development
+  database: SAS_blog_development
   username: csaba
   password:
 
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: vitamins_test
+  database: SAS_blog_test
   username: csaba
   password:
 
@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: vitamins_production
+  database: SAS_blog_production
   # username: test_app_psql
   # password: <%= ENV['TEST_APP_PSQL_DATABASE_PASSWORD'] %>
